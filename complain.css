@@ -1,0 +1,158 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+        padding:0px;
+        margin:0px;
+    }
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+
+    #img-logo{
+        height:50px;
+        border-radius: 10rem;
+    }
+    nav {
+        position: fixed;
+        width: 90%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px 120px 30px 120px;
+        z-index: 1000;
+        backdrop-filter: blur(8px);
+        border-radius: 10rem;
+        overflow: hidden;
+    }
+
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap:5px;
+    }
+    .logo p{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .list{
+        display: flex;
+        list-style: none;
+        gap:60px;
+        font-size: 1.1em;
+        font-weight: 600;
+        color:rgb(75, 75, 75);
+    }
+    .list a{
+        text-decoration: none;
+        color:rgb(75, 75, 75);
+    }
+    #nav-t{
+        transition: all 0.3s;
+        cursor: pointer;
+        border:2px solid transparent;
+        padding:5px;
+    }
+    #nav-t:hover{
+        color: #141e30;
+        border:2px solid #3C5889;
+        border-radius: 2rem;
+    }
+    .login{
+        display: flex;
+        gap:10px;
+        
+    }
+    .login button{
+        width:100px;
+        background-color: transparent;
+        border-radius: 1rem;
+        padding:6px 5px 6px 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        color:black;
+        border:2px solid black;
+    }
+    #login button{
+        background-color: rgba(160, 238, 160, 0.89);
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+    #login button:hover{
+        background-color: rgb(108, 238, 108);
+    }
+    
+    #signup button{
+        background-color: rgba(235, 199, 131, 0.904);
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+    #signup button:hover{
+        background-color: rgb(236, 180, 75);
+    }
+
+
+
+
+    /* Form Container */
+    .container {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 10px;
+        width: 350px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #218838;
+    }
+
+    /* Image Preview */
+    #preview {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }

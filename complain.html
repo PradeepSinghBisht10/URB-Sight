@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Submission</title>
+    <link rel="stylesheet" href="complain.css">
+</head>
+<nav>
+    <div class="nav-con">
+        <div class="logo">
+            <img src="acimg.jpg" id="img-logo">
+            <p>scity</p>
+        </div>
+    </div>
+    <ul class="list">
+        <a href="index.html"><li id="nav-t">Home</li></a>
+        <a href="about.html"><li id="nav-t">About</li></a>
+        <a href="track.html"><li id="nav-t">Track</li></a>
+        <a href="complain.html"><li id="nav-t">Complain</li></a>
+    </ul>
+    <div class="login">
+        <a href="login.html" id="login"><button>Login</button></a>
+        <a href="signup.html" id="signup"><button>SignUp</button></a>
+    </div>
+    
+</nav>
+<body>
+
+    <div class="container">
+        <h2>Submit a Complaint</h2>
+        <form id="complaint-form"  method="post" action="complaint.php">
+            <label for="title">Problem Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" onchange="previewImage(event)">
+            <img id="preview" src="" alt="Image Preview" style="none">
+
+            <label for="location">Problem Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="complain.js"></script>
+
+</body>
+</html>

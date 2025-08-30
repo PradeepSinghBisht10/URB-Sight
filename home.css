@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2376b28f-5f96-4779-9060-2fd01e159343/dazgo6o-05e067b5-1b55-49ac-a779-0a304880da62.png/v1/fill/w_982,h_725,q_80,strp/starlight_city_pixel_art_by_violent__pacifist_dazgo6o-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI1IiwicGF0aCI6IlwvZlwvMjM3NmIyOGYtNWY5Ni00Nzc5LTkwNjAtMmZkMDFlMTU5MzQzXC9kYXpnbzZvLTA1ZTA2N2I1LTFiNTUtNDlhYy1hNzc5LTBhMzA0ODgwZGE2Mi5wbmciLCJ3aWR0aCI6Ijw9OTgyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.LnHdzP7Z5BC9E25BBWNKxPiKtLv4zffSzqb-pz8TQHE');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 30%;
+    background-attachment: fixed;
+}
+#img-logo{
+    height:50px;
+    border-radius: 10rem;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 120px 30px 120px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 10rem;
+    overflow: hidden;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.logo p{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap:60px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color:rgb(75, 75, 75);
+}
+.list a{
+    text-decoration: none;
+    color:rgb(75, 75, 75);
+}
+#nav-t{
+    transition: all 0.3s;
+    cursor: pointer;
+    border:2px solid transparent;
+    padding:5px;
+}
+#nav-t:hover{
+    color: #141e30;
+    border:2px solid #3C5889;
+    border-radius: 2rem;
+}
+.login{
+    display: flex;
+    gap:10px;
+}
+.login button{
+    width:100px;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding:6px 5px 6px 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+#login button{
+    background-color: rgba(160, 238, 160, 0.89);
+    transition: all 0.3s;
+    font-weight: 500;
+}
+#login button:hover{
+    background-color: rgb(108, 238, 108);
+}
+
+#signup button{
+    background-color: rgba(235, 199, 131, 0.904);
+    transition: all 0.3s;
+    font-weight: 500;
+}
+#signup button:hover{
+    background-color: rgb(236, 180, 75);
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:9% ;
+    font-size: 1.5em;
+}
+.mid p{
+    margin-top: 1%;
+}
+.btn-mid{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    align-items: center;
+    width: 100%;
+}
+.btn-mid button{
+    background-color: #3C5889;
+    border:2px solid #3C5889;
+    border-radius: 2rem;
+    padding:7px;
+    color:white;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.vision{
+    display: flex;
+    justify-content: center;
+    width:800px;
+    border-radius: 2rem;
+}
+.vision img{
+    height: 200px;
+}
+.vision-w{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(60px);
+    padding:20px 40px 20px 20px;
+    border-radius: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+#vhead{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.mission{
+    margin-top: 4%;
+    /* height: 800px;; */
+    padding:30px 120px 30px 120px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(60px);
+
+    
+}
+
+.cont-miss{
+    padding:60px;
+    border:2px solid black;
+    border-radius: 1rem;
+}
+.problem p{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.cont-miss{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+.mis-cont{
+    border:2px solid black;
+    width:500px;
+    padding:20px;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#mis-hd{
+    font-size: 1.3em;
+    font-weight: 700;
+    
+}
+.mis-cont:hover{
+    background-color: rgba(240, 248, 255, 0.534);
+}
+.mis-cont p{
+    font-weight: 500;
+}
+
+
+
+
+.slider-container {
+    margin-left: 29%;
+    margin-top: 6%;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    /* border: 2px solid #000; */
+    position: relative;
+    border-radius: 1rem;
+}
+
+.slider {
+    
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallary p{
+    margin-top: 5%;
+    font-size: 1.8em;
+    margin-bottom: -5%;
+    text-align: center;
+    font-weight: 800;
+    
+}
+.yt-gal{
+    padding:30px 120px 30px 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.video-title{
+    color:#0f1724;
+    font-weight: 700;
+}
+.crid{
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+footer{
+    background-color: #323233;
+    color:white;
+    padding:30px 210px 30px 210px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.up-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-r{
+    display: flex;
+    gap:30px;
+}
+.foot-nav{
+    display: flex;
+    gap:30px;
+}
+.foot-nav a{
+    text-decoration: none;
+    color:white;
+}
+.foot-r p{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.r-in a{
+    text-decoration: none;
+    color:white;
+    font-size:1.7em;
+    cursor: pointer;
+
+}
+.r-in{
+    display: flex;
+    gap:20px;
+}
+.copy-r{
+    text-align: center;
+}
+

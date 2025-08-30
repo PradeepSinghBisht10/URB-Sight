@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart City</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .hero {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://picsum.photos/2000/1000");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      .hero h1 {
+        font-size: 48px;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 24px;
+      }
+      .features {
+        padding: 50px 0;
+      }
+      .features h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .complain-types {
+        padding: 50px 0;
+      }
+      .complain-types h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .raise-complain {
+        padding: 50px 0;
+      }
+      .raise-complain h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .testimonials {
+        padding: 50px 0;
+        background-color: #f7f7f7;
+      }
+      .testimonials h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .call-to-action {
+        padding: 50px 0;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+      .call-to-action h2 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .footer {
+        padding: 20px 0;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+      .modal-content {
+        background-color: #333;
+        color: #fff;
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card-body {
+        padding: 20px;
+      }
+      .card-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .card-text {
+        font-size: 18px;
+      }
+      .blockquote {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+      }
+      .blockquote-footer {
+        font-size: 18px;
+        font-style: italic;
+      }
+      .nav-link {
+        color: #333;
+      }
+      .nav-link:hover {
+        color: #337ab7;
+      }
+      .nav-link.active {
+        color: #337ab7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Smart City</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#complain-types">Complain Types</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#raise-complain">Raise Complain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to Smart City</h1>
+      <p>Building a better future for all citizens</p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#smartCityModal"
+      >
+        Learn More
+      </button>
+    </div>
+    <div id="features" class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Smart Traffic Management</h5>
+                <p class="card-text">
+                  Our intelligent traffic system ensures smooth flow of traffic
+                  and reduces congestion
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Energy Efficiency</h5>
+                <p class="card-text">
+                  We use renewable energy sources and energy-efficient systems
+                  to reduce our carbon footprint
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Public Safety</h5>
+                <p class="card-text">
+                  Our advanced surveillance system and emergency response plan
+                  ensure the safety of all citizens
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="complain-types" class="complain-types">
+      <div class="container">
+        <h2>Complain Types</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Traffic Complaint</h5>
+                <p class="card-text">
+                  File a complaint about traffic issues in your area
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Energy Complaint</h5>
+                <p class="card-text">
+                  File a complaint about energy issues in your area
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Public Safety Complaint</h5>
+                <p class="card-text">
+                  File a complaint about public safety issues in your area
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="raise-complain" class="raise-complain">
+      <div class="container">
+        <h2>Raise a Complain</h2>
+        <form id="complain-form">
+          <div class="mb-3">
+            <label for="complain-type" class="form-label">Complain Type</label>
+            <select class="form-select" id="complain-type">
+              <option value="traffic">Traffic Complaint</option>
+              <option value="energy">Energy Complaint</option>
+              <option value="public-safety">Public Safety Complaint</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="complain-description" class="form-label"
+              >Complain Description</label
+            >
+            <textarea
+              class="form-control"
+              id="complain-description"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Complain</button>
+        </form>
+      </div>
+    </div>
+    <div id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>
+                "Smart City has improved my quality of life. The traffic
+                management system is amazing!"
+              </p>
+              <footer class="blockquote-footer">John Doe</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>
+                "I feel safer living in Smart City. The public safety measures
+                are top-notch!"
+              </p>
+              <footer class="blockquote-footer">Jane Smith</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="blockquote">
+              <p>
+                "Smart City is a great place to live and work. I'm proud to call
+                it my home!"
+              </p>
+              <footer class="blockquote-footer">Bob Johnson</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="call-to-action">
+      <h2>Get Involved</h2>
+      <p>Join our community and help us build a better future for all</p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#smartCityModal"
+      >
+        Learn More
+      </button>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Smart City</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="text-light">Contact Us</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-light">Facebook</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-light">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="modal fade"
+      id="smartCityModal"
+      tabindex="-1"
+      aria-labelledby="smartCityModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="smartCityModalLabel">
+              About Smart City
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Smart City is a revolutionary initiative that aims to build a
+              better future for all citizens. Our goal is to create a
+              sustainable, efficient, and safe living environment that enhances
+              the quality of life for everyone.
+            </p>
+            <p>
+              We use cutting-edge technology and innovative solutions to manage
+              traffic, energy, and public safety. Our community is at the heart
+              of everything we do, and we encourage all citizens to get involved
+              and help us shape the future of Smart City.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="complainModal"
+      tabindex="-1"
+      aria-labelledby="complainModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="complainModalLabel">
+              Complain Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="complain-type-modal"></p>
+            <p id="complain-description-modal"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const complainForm = document.getElementById("complain-form");
+      complainForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const complainType = document.getElementById("complain-type").value;
+        const complainDescription = document.getElementById(
+          "complain-description"
+        ).value;
+        document.getElementById(
+          "complain-type-modal"
+        ).innerText = `Complain Type: ${complainType}`;
+        document.getElementById(
+          "complain-description-modal"
+        ).innerText = `Complain Description: ${complainDescription}`;
+        const complainModal = new bootstrap.Modal(
+          document.getElementById("complainModal"),
+          {
+            keyboard: false,
+          }
+        );
+        complainModal.show();
+      });
+    </script>
+  </body>
+</html>
