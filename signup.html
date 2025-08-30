@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="sign.css">
+    <script src="https://kit.fontawesome.com/e792edebcd.js" crossorigin="anonymous"></script>
+</head>
+<nav>
+    <div class="nav-con">
+        <div class="logo">
+            <img src="acimg.jpg" id="img-logo">
+            <p>scity</p>
+        </div>
+    </div>
+    <ul class="list">
+        <a href="index.html"><li id="nav-t">Home</li></a>
+        <a href="about.html"><li id="nav-t">About</li></a>
+        <a href="track.html"><li id="nav-t">Track</li></a>
+        <a href="complain.html"><li id="nav-t">Complain</li></a>
+    </ul>
+    <div class="login">
+        <a href="login.html" id="login"><button>Login</button></a>
+        <a href="signup.html" id="signup"><button>SignUp</button></a>
+    </div>
+    
+</nav>
+<body>
+    <div class="container">
+        <div class="sign-cont">
+            <div id="logo">
+                <img src="ing4.jpg">
+                <p id="title">Sign up and <span>'make a fuss'</span></p>
+            </div>
+            <form id="email" action="signup.php" method="post">
+                <p>Name</p>
+                <input type="text" id="name" name="name" placeholder="Username" required>
+                <p>Email address</p>
+                <input type="text" id="email" name="email" placeholder="name@domain.com" required>
+                <p>Locality</p>
+                <input type="text" id="location" name="location" placeholder="Location / Ward number" required>
+                
+                <div id="map"></div>
+
+    <script>
+        let map;
+        let geocoder;
+
+        function initMap() {
+            const defaultLocation = { lat: 28.6139, lng: 77.2090 };
+
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: defaultLocation,
+            });
+
+            geocoder = new google.maps.Geocoder();
+
+            map.addListener("click", (event) => {
+                const clickedLocation = event.latLng;
+
+                geocoder.geocode({ location: clickedLocation }, (results, status) => {
+                    if (status === "OK" && results.length > 0) {
+                        const placeId = results[0].place_id;
+                        const formattedAddress = results[0].formatted_address;
+
+                        // Update input field with Place ID
+                        document.getElementById("location").value = placeId || "No Place ID found";
+                        console.log("Place ID:", placeId);
+                        console.log("Address:", formattedAddress);
+                    } else {
+                        document.getElementById("location").value = "No Place ID found";
+                    }
+                });
+            });
+        }
+    </script>
+
+    <!-- Load Google Maps API (Replace YOUR_API_KEY with your actual key) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh6962wzJSNr3TtXsbmvA80g-AvecC8ok&libraries=places&callback=initMap" async defer></script>
+
+    <button id="submit">Submit</button>
+            </form>
+
+            <div id="direct">
+                <p>Already Registered?</p>
+                <a href="login.html"><p id="login" >Login</p></a>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

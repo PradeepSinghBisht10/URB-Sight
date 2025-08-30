@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+#img-logo{
+    height:50px;
+    border-radius: 10rem;
+}
+nav {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 120px 30px 120px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    border-radius: 10rem;
+    overflow: hidden;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.logo p{
+    font-size: 1.5em;
+    font-weight: 700;
+    color:white;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap:60px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color:rgb(75, 75, 75);
+}
+.list a{
+    text-decoration: none;
+    color:white;
+}
+#nav-t{
+    transition: all 0.3s;
+    cursor: pointer;
+    border:2px solid transparent;
+    padding:5px;
+}
+#nav-t:hover{
+    color: white;
+    border:2px solid white;
+    border-radius: 2rem;
+}
+.login{
+    display: flex;
+    gap:10px;
+    
+}
+.login button{
+    width:100px;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding:6px 5px 6px 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    color:black;
+    border:2px solid black;
+}
+#login button{
+    background-color: rgba(160, 238, 160, 0.89);
+    transition: all 0.3s;
+    font-weight: 500;
+}
+#login button:hover{
+    background-color: rgb(108, 238, 108);
+}
+
+#signup button{
+    background-color: rgba(235, 199, 131, 0.904);
+    transition: all 0.3s;
+    font-weight: 500;
+}
+#signup button:hover{
+    background-color: rgb(236, 180, 75);
+}
+body{
+    /* margin-top:100px; */
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    /* overflow: hidden; */
+    color:white;
+}
+#title{
+    width:500px;
+}
+span{
+    font-style: italic;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height:100vh; */
+}
+.sign-cont{
+    /* background-color:blueviolet; */
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:30px;
+    width:370px;
+    margin-top: 5%;
+}
+#logo img{
+    height:70px;
+    border-radius: 1rem;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+#logo p{
+    font-size: 4em;
+    line-height: 1em;
+    font-weight:700 ;
+    text-align: center;
+}
+#email,#name,#location{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+#email p,#name p,#location p{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#email input,#name input,#location input{
+    background-color: transparent;
+    border:2px solid #737372;
+    border-radius: 0.5rem;
+    height:5px;
+    transition: all 0.2s;
+    color:white;
+    font-weight: 600;
+}
+#email input:hover{
+    border:2px solid white;
+}
+#email:placeholder-shown{
+    color:#edecec;
+    font-weight: 700;
+}
+#email a{
+    text-decoration: none;
+}
+#email a span{
+    color:#1ed661;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+#email button{
+    width: 100%;
+    background-color: #1ed661;
+    border-style: none;
+    height:50px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 10rem;
+    margin-top: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+#email button:hover{
+    background-color: #33db71;
+}
+#submit{
+    margin-top: 0px;
+}
+#direct{
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    color:white;
+    
+}
+#direct a{
+    text-decoration: none;
+    color:white;
+    text-decoration: underline;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
